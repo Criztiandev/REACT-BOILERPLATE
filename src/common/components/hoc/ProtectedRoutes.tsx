@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useAuth } from "@/common/provider/AuthProvider";
-import { User } from "@/feature/user/interface";
+import { User } from "@/feature/shared/interface";
 import { FC, PropsWithChildren, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 

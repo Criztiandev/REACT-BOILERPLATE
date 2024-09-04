@@ -9,9 +9,7 @@ import {
 } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
 import { useNavigate } from "react-router-dom";
-import { User } from "@/feature/user/interface";
-
-
+import { User } from "@/feature/shared/interface";
 
 interface AuthContextType {
   user: User | null;
