@@ -3,17 +3,12 @@ import { Button } from "@/common/components/ui/button";
 import { Checkbox } from "@/common/components/ui/checkbox";
 import { FormBase } from "@/common/components/ui/form";
 import { XStack, YStack } from "@/common/components/ui/stack";
-import { User } from "@/feature/shared/interface";
-import { useForm } from "react-hook-form";
+import { useLogin } from "../hooks/mutation";
 
 const LoginPage = () => {
-  const form = useForm({
-    defaultValues: { email: "", password: "" },
-  });
+  const { form } = useLogin();
 
-  const onSubmit = (value: Pick<User, "email" | "password">) => {
-    console.log(value);
-  };
+  const onSubmit = () => {};
 
   return (
     <div className="h-screen border ">
