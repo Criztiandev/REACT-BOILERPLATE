@@ -52,7 +52,12 @@ const LoginPage = () => {
                   <Button className="mb-8">Login</Button>
                   <XStack className="gap-2 items-center justify-center">
                     <span>Don't have an account</span>
-                    <a href="#">Create an account</a>
+                    <a
+                      href="/register"
+                      className="text-blue-500 underline underline-offset-2"
+                    >
+                      Create an account
+                    </a>
                   </XStack>
                 </form>
               </FormBase>

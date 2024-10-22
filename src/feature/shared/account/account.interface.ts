@@ -3,5 +3,5 @@ export interface IAccountSchema {
   lastName: string;
   email: string;
   password: string;
-  role: string;
+  role: "user" | "admin";
 }
