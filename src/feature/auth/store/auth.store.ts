@@ -10,5 +10,3 @@ const useAuthStore = create<IAuthStore>((set) => ({
 }));
 
 export default useAuthStore;
-
-// { UID: "1", role: "admin", token: "123123" }
