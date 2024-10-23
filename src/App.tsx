@@ -1,10 +1,10 @@
 import { RouterProvider } from "react-router-dom";
-import authRoutes from "@/feature/auth/auth.routes";
-import useAuthStore from "./feature/auth/store/auth.store";
 import { IAccountSchema } from "./feature/shared/account/account.interface";
 import userRoutes from "./feature/user/user.routes";
 import adminRoutes from "./feature/admin/admin.routes";
 import { useEffect } from "react";
+import useAuthStore from "./feature/public/auth/store/auth.store";
+import authRoutes from "@/feature/public/auth/auth.routes";
 
 const roleMap: Record<IAccountSchema["role"], any> = {
   user: userRoutes,
